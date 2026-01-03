@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Patrick Makina"
 publishDir = "_site"
+canonifyURLs = true
 
 [markup]
   [markup.goldmark]
@@ -10,4 +11,28 @@ publishDir = "_site"
 
 [params]
   author = "Patrick Makina"
-  description = "Graduate student in Mathematical Sciences at AIMS, Rwanda"
+  description = "Graduate student in Mathematical Sciences at AIMS, Rwanda. Specializing in statistical machine learning, theoretical statistics, abstract algebra, and theoretical computer science."
+  keywords = "mathematician, machine learning, statistics, abstract algebra, computer science"
+  twitterHandle = ""
+  githubHandle = "patrickmakina"
+  linkedinHandle = "patrick-makina"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Curriculum Vitae"
+  url = "/cv/"
+  weight = 2
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 3
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contacts/"
+  weight = 4

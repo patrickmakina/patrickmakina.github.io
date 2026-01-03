@@ -1,43 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>{{ .Title }} - Patrick Makina</title>
-{{ $style := resources.Get "css/style.css" }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-<style>
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
-main {
-  flex: 1;
-}
-</style>
-</head>
-<body>
-<header class="navbar">
-<nav>
-{{ range .Site.Menus.main }}
-<a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-{{ end }}
-</nav>
-</header>
-
-<main>
-<div style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+{{ define "main" }}
+<div class="content-wrapper">
 <h1>{{ .Title }}</h1>
-<div style="margin-top: 2rem; line-height: 1.8; color: #6b7280; font-size: 1.1rem;">
+<div class="content">
 {{ .Content }}
 </div>
 </div>
-</main>
-
-<footer>
-<p>© {{ now.Year }} Patrick Makina</p>
-</footer>
-</body>
-</html>
+{{ end }}

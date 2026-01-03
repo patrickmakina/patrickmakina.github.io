@@ -5,4 +5,6 @@ menu:
     weight: 4
 ---
 
-Email: patrickmakina@email.com
+**Email**: patrickmakina@email.com
+
+**Github**: https://github.com/patrickmakina/
