@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ .Title }}</title>
+{{ $style := resources.Get "css/style.css" }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+<body>
+<header class="navbar">
+<nav>
+{{ range .Site.Menus.main }}
+<a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+{{ end }}
+</nav>
+</header>
+
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+
+<footer>
+<p>© {{ now.Year }} Patrick Makina</p>
+</footer>
+</body>
+</html>
