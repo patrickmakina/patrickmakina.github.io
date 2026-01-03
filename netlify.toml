@@ -7,7 +7,7 @@
 
 [context.production]
   command = "hugo"
-  publish = "public"
+  publish = "_site"
 
 [[redirects]]
   from = "/*"
