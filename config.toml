@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Patrick Makina"
 theme = ""
+publishDir = "_site"
 
 [markup]
   [markup.goldmark]
